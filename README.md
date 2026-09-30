@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/muki01/esp32-cyd-car-dashboard/actions/workflows/build.yml"><img src="https://github.com/muki01/esp32-cyd-car-dashboard/actions/workflows/build.yml/badge.svg" alt="Firmware build status"></a>
-  <a href="https://github.com/muki01/esp32-cyd-car-dashboard/releases/latest"><img src="https://img.shields.io/github/v/release/muki01/esp32-cyd-car-dashboard?logo=github&color=1FCBF2" alt="Latest release"></a>
+  <a href="https://github.com/muki01/car-dashboard-esp32-cyd/actions/workflows/build.yml"><img src="https://github.com/muki01/car-dashboard-esp32-cyd/actions/workflows/build.yml/badge.svg" alt="Firmware build status"></a>
+  <a href="https://github.com/muki01/car-dashboard-esp32-cyd/releases/latest"><img src="https://img.shields.io/github/v/release/muki01/car-dashboard-esp32-cyd?logo=github&color=1FCBF2" alt="Latest release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2ED47A" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/platform-ESP32-E7352C?logo=espressif&logoColor=white" alt="Platform: ESP32">
   <img src="https://img.shields.io/badge/board-ESP32--2432S028R%20(CYD)-F0BE28" alt="Board: ESP32-2432S028R Cheap Yellow Display">
@@ -120,7 +120,7 @@ DMA display driver, persistent settings, touch calibration, auto-brightness, loc
 
 ### Flash a prebuilt firmware (no IDE needed)
 
-Every [release](https://github.com/muki01/esp32-cyd-car-dashboard/releases/latest) ships ready-to-flash images:
+Every [release](https://github.com/muki01/car-dashboard-esp32-cyd/releases/latest) ships ready-to-flash images:
 
 | Your board | Release file |
 |---|---|
@@ -292,7 +292,7 @@ Rotate screen 180°*. The full troubleshooting table is in [docs/hardware.md](do
 Contributions, bug reports and feature ideas are very welcome — new languages, gauge styles, board variants
 and the vehicle link in particular. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and the
 [Code of Conduct](CODE_OF_CONDUCT.md). For UI changes, attach simulator screenshots to your pull request.
-Questions and build photos are welcome in [Discussions](https://github.com/muki01/esp32-cyd-car-dashboard/discussions).
+Questions and build photos are welcome in [Discussions](https://github.com/muki01/car-dashboard-esp32-cyd/discussions).
 
 ## 🙏 Acknowledgements
 

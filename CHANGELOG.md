@@ -49,5 +49,5 @@ All notable changes to this project are documented here. The format follows
 - Demo data source simulating a driving car.
 - Desktop simulator producing screenshots of every screen; font/icon generator.
 
-[Unreleased]: https://github.com/muki01/esp32-cyd-car-dashboard/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/muki01/esp32-cyd-car-dashboard/releases/tag/v1.1.0
+[Unreleased]: https://github.com/muki01/car-dashboard-esp32-cyd/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/muki01/car-dashboard-esp32-cyd/releases/tag/v1.1.0
