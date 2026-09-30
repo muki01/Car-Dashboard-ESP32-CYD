@@ -292,6 +292,7 @@ Rotate screen 180°*. The full troubleshooting table is in [docs/hardware.md](do
 Contributions, bug reports and feature ideas are very welcome — new languages, gauge styles, board variants
 and the vehicle link in particular. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and the
 [Code of Conduct](CODE_OF_CONDUCT.md). For UI changes, attach simulator screenshots to your pull request.
+Questions and build photos are welcome in [Discussions](https://github.com/muki01/esp32-cyd-car-dashboard/discussions).
 
 ## 🙏 Acknowledgements
 
