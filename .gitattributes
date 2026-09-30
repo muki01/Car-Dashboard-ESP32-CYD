@@ -1,0 +1,14 @@
+# Normalise line endings in the repository.
+* text=auto
+
+# Binary assets
+*.png  binary
+*.gif  binary
+*.ttf  binary
+
+# GitHub language statistics: the generated fonts and the LVGL configuration template are not
+# hand-written project code, and docs/tools should not count as the main language.
+CarCYD/src/ui/fonts/*.c    linguist-generated=true
+CarCYD/src/ui/fonts/*.h    linguist-generated=true
+CarCYD/lv_conf.h           linguist-vendored=true
+docs/**                    linguist-documentation=true

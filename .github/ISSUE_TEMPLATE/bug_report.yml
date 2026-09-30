@@ -1,0 +1,48 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report a problem! A photo of the display often helps a lot.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+  - type: dropdown
+    id: board
+    attributes:
+      label: Board variant
+      options:
+        - ESP32-2432S028R, one micro-USB port (ILI9341)
+        - ESP32-2432S028R, micro-USB + USB-C ("CYD2USB")
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+      description: Settings → About → Firmware
+      placeholder: "1.1.0"
+  - type: input
+    id: toolchain
+    attributes:
+      label: ESP32 core / LVGL / LovyanGFX versions
+      placeholder: "esp32 3.3.x, lvgl 9.6.0, LovyanGFX 1.2.x"
+  - type: textarea
+    id: log
+    attributes:
+      label: Serial log (115200 baud)
+      render: text

@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  firmware:
+    name: Firmware (${{ matrix.panel.name }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        panel:
+          - { name: ILI9341, id: 1 }
+          - { name: ILI9341_2, id: 2 }
+          - { name: ST7789, id: 3 }
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile CarCYD (ESP32 Dev Module)
+        uses: arduino/compile-sketches@v1
+        with:
+          fqbn: esp32:esp32:esp32
+          platforms: |
+            - name: esp32:esp32
+              source-url: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          libraries: |
+            - name: lvgl
+              version: 9.6.0
+            - name: LovyanGFX
+          sketch-paths: |
+            - CarCYD
+          cli-compile-flags: |
+            - --build-property
+            - compiler.cpp.extra_flags=-DCYD_PANEL=${{ matrix.panel.id }}
+            - --warnings
+            - all

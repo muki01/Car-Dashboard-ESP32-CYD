@@ -1,0 +1,10 @@
+# C/C++ formatting for CarCYD (generated fonts and lv_conf.h are excluded via "clang-format off").
+BasedOnStyle: Google
+ColumnLimit: 120
+IndentWidth: 2
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+DerivePointerAlignment: false
+PointerAlignment: Left
+IncludeBlocks: Preserve
+SortIncludes: true
