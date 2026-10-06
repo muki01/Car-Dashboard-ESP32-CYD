@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="images/car-dashboard-esp32-cyd-banner.svg" alt="CarCYD: the ESP32-2432S028R Cheap Yellow Display running the car dashboard firmware, with the gauge cluster, engine gauges, live OBD-II data and the fault code reader on its screen" width="100%">
+<img src="images/car-dashboard-esp32-cyd-banner.svg" alt="CarCYD: the ESP32-2432S028R Cheap Yellow Display running the car dashboard firmware, with the tachometer ring, speed, engine speed and gear of the gauge cluster moving as the car accelerates and brakes" width="100%">
 
 # CarCYD — ESP32 Car Dashboard for the Cheap Yellow Display
 
@@ -312,7 +312,7 @@ This firmware is part of a family of open-source automotive projects.
     <th colspan="3" align="left">Firmware — flash it and use it</th>
   </tr>
   <tr>
-    <td width="30%"><b>CarCYD Car Dashboard</b><br><sub>you are here</sub></td>
+    <td width="30%"><b>ESP32 CYD Car Dashboard</b><br><sub>you are here</sub></td>
     <td>Digital gauge cluster and OBD-II display for the ESP32 Cheap Yellow Display, built with LVGL 9.</td>
     <td width="118" align="center"><a href="https://github.com/muki01/Car-Dashboard-ESP32-CYD/stargazers"><img height="22" src="https://img.shields.io/github/stars/muki01/Car-Dashboard-ESP32-CYD?style=flat&logo=github&logoColor=white&label=Stars&labelColor=1f2328&color=0891b2" alt="GitHub stars of Car-Dashboard-ESP32-CYD"></a></td>
   </tr>
