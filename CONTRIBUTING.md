@@ -54,9 +54,10 @@ See [docs/architecture.md](docs/architecture.md) and [docs/ui-guidelines.md](doc
 - Keep pull requests focused; one topic per PR.
 - Use [Conventional Commits](https://www.conventionalcommits.org/) style messages, e.g.
   `feat(ui): add boost gauge`, `fix(touch): ...`, `docs: ...`.
-- Update `CHANGELOG.md` (section *Unreleased*) and the documentation when behaviour changes.
+- Update the documentation when behaviour changes.
 - UI changes: attach simulator screenshots (before / after).
 - Hardware changes: mention the board variant you tested on.
 
-By contributing you agree that your contributions are licensed under the [MIT License](LICENSE) and that you
-follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+By contributing, you agree that your contributions are licensed under the
+[GNU General Public License v3.0](LICENSE), that the author may also offer them under a commercial license, and
+that you follow the [Code of Conduct](CODE_OF_CONDUCT.md).

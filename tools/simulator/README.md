@@ -21,9 +21,9 @@ python tools/simulator/build.py --cc gcc --cxx g++                      # with g
 ```
 
 Output:
-- `docs/screenshots/<lang>/*.png` — every screen, scaled 2× pixel-exact (`--scale 1` for native size)
-- `docs/screenshots/overview_<lang>.png` — all screens on one page
-- `docs/media/demo.gif` — animated tour (`--demo`), `docs/media/banner.png` — 1280×640 hero / social preview
+- `images/screenshots/<lang>/*.png` — every screen, scaled 2× pixel-exact (`--scale 1` for native size)
+- `images/screenshots/overview_<lang>.png` — all screens on one page
+- `images/demo.gif` — animated tour (`--demo`), `images/social-preview.png` — 1280×640 social preview
   image (`--banner`)
 
 The first build compiles about 500 files including LVGL; later builds are incremental.

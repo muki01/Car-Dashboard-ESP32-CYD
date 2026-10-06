@@ -2,8 +2,8 @@
 """
 Marketing media for the README, generated from real simulator output:
 
-    make_demo_gif()  - animated product tour (docs/media/demo.gif)
-    make_banner()    - 1280x640 hero / GitHub social preview image (docs/media/banner.png)
+    make_demo_gif()  - animated product tour (images/demo.gif)
+    make_banner()    - 1280x640 GitHub social preview image (images/social-preview.png)
 
 Requires Pillow. Called by build.py (--demo / --banner).
 """

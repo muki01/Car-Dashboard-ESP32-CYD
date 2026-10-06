@@ -13,11 +13,12 @@ Requirements:
 Usage:
     python tools/simulator/build.py                       # screenshots (English)
     python tools/simulator/build.py --lang tr             # screenshots (Turkish UI)
-    python tools/simulator/build.py --demo --banner       # docs/media/demo.gif + banner.png
+    python tools/simulator/build.py --demo --banner       # images/demo.gif + social-preview.png
     python tools/simulator/build.py --zig C:/tools/zig/zig.exe
     python tools/simulator/build.py --cc gcc --cxx g++
 
-Output: docs/screenshots/<lang>/*.png, docs/screenshots/overview_<lang>.png, docs/media/*
+Output: images/screenshots/<lang>/*.png, images/screenshots/overview_<lang>.png, images/demo.gif,
+        images/social-preview.png
 """
 
 from __future__ import annotations
@@ -136,16 +137,16 @@ def main() -> int:
     parser.add_argument("--cc")
     parser.add_argument("--cxx")
     parser.add_argument("--lang", choices=["en", "tr"], default="en")
-    parser.add_argument("--out", type=Path, default=ROOT / "docs" / "screenshots")
+    parser.add_argument("--out", type=Path, default=ROOT / "images" / "screenshots")
     parser.add_argument("--scale", type=int, default=2, help="PNG scale factor (nearest neighbour)")
-    parser.add_argument("--demo", action="store_true", help="record the animated tour -> docs/media/demo.gif")
-    parser.add_argument("--banner", action="store_true", help="render docs/media/banner.png from the screenshots")
+    parser.add_argument("--demo", action="store_true", help="record the animated tour -> images/demo.gif")
+    parser.add_argument("--banner", action="store_true", help="render images/social-preview.png from the screenshots")
     parser.add_argument("--no-run", action="store_true")
     opts = parser.parse_args()
 
     if opts.banner and not opts.demo:
         from media import make_banner
-        make_banner(ROOT / "docs" / "screenshots" / "en", ROOT / "docs" / "media" / "banner.png")
+        make_banner(ROOT / "images" / "screenshots" / "en", ROOT / "images" / "social-preview.png")
         return 0
 
     if not (opts.lvgl / "lvgl.h").exists():
@@ -187,9 +188,9 @@ def main() -> int:
         if run.returncode != 0:
             return run.returncode
         from media import make_banner, make_demo_gif
-        make_demo_gif(frames, ROOT / "docs" / "media" / "demo.gif", scale=opts.scale)
+        make_demo_gif(frames, ROOT / "images" / "demo.gif", scale=opts.scale)
         if opts.banner:
-            make_banner(ROOT / "docs" / "screenshots" / "en", ROOT / "docs" / "media" / "banner.png")
+            make_banner(ROOT / "images" / "screenshots" / "en", ROOT / "images" / "social-preview.png")
         return 0
 
     opts.out.mkdir(parents=True, exist_ok=True)

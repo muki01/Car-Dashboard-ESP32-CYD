@@ -6,7 +6,7 @@ tools/simulator/build/
 *.map
 
 # Simulator intermediate frames
-docs/screenshots/*.ppm
+images/screenshots/*.ppm
 
 # IDE / OS
 .vscode/

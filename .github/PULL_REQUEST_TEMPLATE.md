@@ -11,4 +11,4 @@
 ## Checklist
 
 - [ ] Follows the architecture rules and code style described in `CONTRIBUTING.md`
-- [ ] Documentation and `CHANGELOG.md` updated where needed
+- [ ] Documentation updated where needed
